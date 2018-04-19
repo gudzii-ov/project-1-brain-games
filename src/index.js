@@ -6,6 +6,8 @@ export const greetUser = () => {
   return userName;
 };
 
+const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
 const isEvenAnswer = (number) => {
   if (number % 2 === 0) {
     return 'yes';
@@ -20,7 +22,7 @@ export const evenGame = (userName) => {
       return;
     }
 
-    const randomNumber = Math.random();
+    const randomNumber = getRandomInteger(0, 100);
     console.log(`Question: ${randomNumber}`);
     const rightAnswer = isEvenAnswer(randomNumber);
     const userAnswer = readlineSync.question('Your answer: ');
