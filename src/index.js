@@ -31,7 +31,7 @@ export const evenGame = (userName) => {
       console.log('Correct!');
       iter(successTries + 1);
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\n`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\n`);
       console.log(`Let's try again, ${userName}!`);
     }
   };
