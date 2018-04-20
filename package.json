@@ -1,6 +1,6 @@
 {
   "name": "brain-games-gudzii-ov",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Hexlet Brain Games project",
   "main": "index.js",
   "scripts": {
