@@ -1,9 +1,10 @@
 import { cons } from 'hexlet-pairs';
-import { getRandomInteger } from '../common-functions';
+import { runGame } from '..';
+import { getRandomInteger } from '../common';
 
-export const gameMessage = 'What is the result of the expression?';
+const gameMessage = 'What is the result of the expression?';
 
-export const game = () => {
+const game = () => {
   const randomNumber1 = getRandomInteger(0, 100);
   const randomNumber2 = getRandomInteger(0, 100);
 
@@ -31,3 +32,7 @@ export const game = () => {
 
   return cons(question, rightAnswer);
 };
+
+const brainCalc = () => runGame(gameMessage, game);
+
+export default brainCalc;

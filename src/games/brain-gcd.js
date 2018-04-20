@@ -1,9 +1,10 @@
 import { cons } from 'hexlet-pairs';
-import { getRandomInteger, gcd } from '../common-functions';
+import { runGame } from '..';
+import { getRandomInteger, gcd } from '../common';
 
-export const gameMessage = 'Find the greatest common divisor of given numbers.';
+const gameMessage = 'Find the greatest common divisor of given numbers.';
 
-export const game = () => {
+const game = () => {
   const randomNumber1 = getRandomInteger(0, 100);
   const randomNumber2 = getRandomInteger(0, 100);
 
@@ -13,3 +14,7 @@ export const game = () => {
 
   return cons(question, rightAnswer);
 };
+
+const brainGcd = () => runGame(gameMessage, game);
+
+export default brainGcd;
