@@ -1,6 +1,6 @@
 {
   "name": "brain-games-gudzii-ov",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Hexlet Brain Games project",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,8 @@
     "eslint-plugin-import": "^2.11.0"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
