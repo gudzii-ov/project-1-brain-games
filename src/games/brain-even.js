@@ -12,7 +12,10 @@ export const gameMessage = 'Answer "yes" if number even otherwise answer "no".';
 
 export const game = () => {
   const randomNumber = getRandomInteger(0, 100);
+
+  const question = `${randomNumber}`;
+
   const rightAnswer = isEvenAnswer(randomNumber);
 
-  return cons(randomNumber, rightAnswer);
+  return cons(question, rightAnswer);
 };
