@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
-import { greetUser, evenGame } from '..';
+import { runGame } from '..';
+import { gameMessage, game } from '../games/brain-even';
 
-console.log('Welcome to the Brain Games!');
-console.log('Answer "yes" if number even otherwise answer "no".\n');
-
-const userName = greetUser();
-evenGame(userName);
+runGame(gameMessage, game);
