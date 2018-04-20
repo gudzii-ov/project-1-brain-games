@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import getRandomInteger from '../common-functions';
+import { getRandomInteger } from '../common-functions';
 
 const isEvenAnswer = (number) => {
   if (number % 2 === 0) {
