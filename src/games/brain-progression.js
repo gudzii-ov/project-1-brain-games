@@ -1,4 +1,4 @@
-import { cons, car, cdr } from 'hexlet-pairs';
+import { cons } from 'hexlet-pairs';
 import { runGame } from '..';
 import { getRandomInteger } from '../common';
 
@@ -20,16 +20,6 @@ const generateProgressionArray = (startNum, elements) => {
   return iter(startNum, elements, progressionArray);
 };
 
-const arrayToString = (array) => {
-  let str = `${array[0]}`;
-
-  for (let i = 1; i < array.length - 1; i += 1) {
-    str += ` ${array[i]}`;
-  }
-
-  return str;
-};
-
 const generateQuestion = (startNum, elements) => {
   const array = generateProgressionArray(startNum, elements);
 
@@ -38,7 +28,7 @@ const generateQuestion = (startNum, elements) => {
   const hiddenNum = array[hiddenNumIndex];
   array[hiddenNumIndex] = '..';
 
-  const questionString = arrayToString(array);
+  const questionString = array.join(' ');
 
   return cons(questionString, hiddenNum);
 };
@@ -46,13 +36,7 @@ const generateQuestion = (startNum, elements) => {
 const game = () => {
   const startNum = getRandomInteger(0, 9);
 
-  const data = generateQuestion(startNum, 10);
-
-  const question = car(data);
-
-  const rightAnswer = `${cdr(data)}`;
-
-  return cons(question, rightAnswer);
+  return generateQuestion(startNum, 10);
 };
 
 const brainProgression = () => runGame(gameMessage, game);
