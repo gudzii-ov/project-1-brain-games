@@ -28,9 +28,10 @@ const generateQuestion = (startNum, elements) => {
   const hiddenNum = array[hiddenNumIndex];
   array[hiddenNumIndex] = '..';
 
-  const questionString = array.join(' ');
+  const question = array.join(' ');
+  const rightAnswer = String(hiddenNum);
 
-  return cons(questionString, hiddenNum);
+  return cons(question, rightAnswer);
 };
 
 const game = () => {
