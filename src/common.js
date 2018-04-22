@@ -33,3 +33,21 @@ export const arrayToNumber = (arr) => {
 export const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 export const gcd = (num1, num2) => (num2 !== 0 ? gcd(num2, num1 % num2) : num1);
+
+export const isPrime = (num) => {
+  const sqrt = Math.sqrt(num);
+
+  const iter = (divisor) => {
+    if (divisor > sqrt) {
+      return true;
+    }
+
+    if (num % divisor === 0) {
+      return false;
+    }
+
+    return iter(divisor + 1);
+  };
+
+  return iter(2);
+};
