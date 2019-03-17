@@ -1,6 +1,6 @@
 {
   "name": "brain-games-gudzii-ov",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Hexlet Brain Games project",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gudzii-ov/project-lvl1-s256.git"
+    "url": "git+https://github.com/gudzii-ov/project-1-brain-games.git"
   },
   "keywords": [
     "hexlet",
@@ -22,9 +22,9 @@
   "author": "Gudzii Oleg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gudzii-ov/project-lvl1-s256/issues"
+    "url": "https://github.com/gudzii-ov/project-1-brain-games/issues"
   },
-  "homepage": "https://github.com/gudzii-ov/project-lvl1-s256#readme",
+  "homepage": "https://github.com/gudzii-ov/project-1-brain-games#readme",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
